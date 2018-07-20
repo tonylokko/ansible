@@ -1,0 +1,4 @@
+---
+- hosts: sweethosts
+  roles:
+     - { role: scspclient, objnumb: "100", nbrthreads: "10", objsize: "2000000000"  }

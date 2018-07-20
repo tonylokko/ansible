@@ -1,0 +1,11 @@
+---
+ - name: copy over the scsp java testing tool
+   copy: src=javascsp.tar
+         dest=/root/javascsp.tar
+         owner=root group=root mode=755
+
+ - name: unpack scsp tool
+   unarchive:
+       src: /root/javascsp.tar
+       dest: /root/
+       remote_src: yes

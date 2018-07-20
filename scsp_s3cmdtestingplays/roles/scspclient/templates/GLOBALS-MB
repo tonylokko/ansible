@@ -1,0 +1,67 @@
+# THIS IS THE GLOBAL PARAMETER LIST
+# ADJUST FOR YOUR TESTING NEEDS
+
+# NUMBER OF OBJECTS TO WRITE/READ/DELETE
+nbrobj={{ objnumb }}
+
+# NUMBER OF PARALLEL THREADS
+nbrthreads={{ nbrthreads }}
+
+# THREAD RAMP UP SPEED IN MILLIS
+rampup=200
+
+# OBJECT SIZE IN BYTES
+sizeobj={{ objsize }}
+
+# NUMBER OF REPLICA's
+reps=-1
+
+# INITIAL CASTOR IP Addresses to use as Primary Access Nodes
+PAN="sds-access01.jc.rl.ac.uk"
+
+# JAVA VM SETTINGS
+JVM="-Xmx4096M -Xms4096M -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalPacing -XX:ParallelGCThreads=3 -XX:+AggressiveOpts"
+
+# JAVA BINARY TO USE
+JAVABIN="java"
+
+# DEFAULT REDIRECTION POLICY -- RFC COMPLIANT # "-doredir"
+REDIR="-doredir"
+
+# ENABLE WRITES , DEFAULT is WRITE
+WRITES="-dowrite"
+# To Disable Writes you must supply an input file of UUID's
+#WRITES="-uuidinputfile ./CHECK_UUIDS"
+
+# ENABLE READS , DEFAULT IS WRITE/DELETE # "-doread"
+READS="-doread -dodelete"
+
+# Use Alias Streams enable with "-doalias"
+ALIAS=""
+
+# Enable Named streams by specifying a domain name
+# The Domain must exist and you are responsible for making it
+# Please do not enable any auth
+DOMAIN="scsptest.jc.rl.ac.uk"
+# The bucket name the test should use, if the bucket does not
+# exist it will be automatically created.
+BUCKET="testbucket"
+
+## ADVANCED OPTIONS ##
+######################
+
+# DEBUG
+DEBUG=""
+
+# SHOW PER THREAD METRICS
+METRICS="-showmetrics"
+
+# HTTP TIMEOUT (s) , HOW LONG TO WAIT FOR A RESPONSE FROM CAStor
+httptimeout=20
+
+# HTTP RETRIES
+httpretries=0
+
+# MAX CONNECTION POOL SIZE
+MAXPOOL=200
+
