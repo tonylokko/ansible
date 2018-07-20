@@ -1,0 +1,5 @@
+---
+- include: addhost.yml
+- include: copyjtestCastor.yml
+- include: applytemplate.yml
+- include: runjcastor.yml

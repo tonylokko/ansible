@@ -1,0 +1,4 @@
+---
+- include: copyscript.yml
+- include: fallocate.yml
+- include: runs3parallel.yml

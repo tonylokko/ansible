@@ -1,0 +1,4 @@
+---
+- include: s3cmd.yml
+- include: s3list.yml
+- include: addhost.yml

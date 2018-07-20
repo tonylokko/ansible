@@ -1,0 +1,5 @@
+---
+ - name: copy over the script
+   copy: src=s3parallel.sh
+         dest=/root/s3parallel.sh
+         owner=root group=root mode=755
