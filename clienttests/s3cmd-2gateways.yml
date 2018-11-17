@@ -1,0 +1,7 @@
+---
+- hosts: jupiler1
+  roles:
+     - { role: s3cmdclient1, s3cmd_user: root, s3cmd_secret_key: <insertyoursecretkeyhere>, s3cmd_access_key: <insertyours3tokenhere>}
+- hosts: jupiler2
+  roles:
+     - { role: s3cmdclient2, s3cmd_user: root, s3cmd_secret_key: <insertyoursecretkeyhere>, s3cmd_access_key: <insertyours3tokenhere>}

@@ -1,0 +1,7 @@
+
+ - name: Adds new GLOBAL  
+   template: >
+    src=../templates/GLOBALS-MB
+    dest=~/javaSCSP/GLOBALS-MB
+    owner=root
+    mode=600

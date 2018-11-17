@@ -1,0 +1,13 @@
+---
+- hosts: s3group1
+  roles:
+     - { role: scspclient1, objnumb: "100", nbrthreads: "10", objsize: "2000000000"  }
+- hosts: s3group2
+  roles:
+     - { role: scspclient2, objnumb: "100", nbrthreads: "10", objsize: "2000000000"  }
+- hosts: s3group3
+  roles:
+     - { role: scspclient2, objnumb: "100", nbrthreads: "10", objsize: "2000000000"  }
+- hosts: s3group4
+  roles:
+     - { role: scspclient2, objnumb: "100", nbrthreads: "10", objsize: "2000000000"  }

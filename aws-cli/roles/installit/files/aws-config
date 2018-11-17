@@ -1,0 +1,9 @@
+[default]
+s3 =
+  signature_version = s3
+  max_concurrent_requests = 5
+  max_queue_size = 10000
+  multipart_threshold = 64MB
+  multipart_chunksize = 100MB
+  addressing_style = virtual
+  endpoint-url=http://<insert-your-s3-domain-here>

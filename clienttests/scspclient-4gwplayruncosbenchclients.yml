@@ -1,0 +1,4 @@
+---
+- hosts: cosbench-hosts
+  roles:
+     - { role: scspclient, objnumb: "10", nbrthreads: "10", objsize: "2000000000"  }

@@ -1,0 +1,4 @@
+---
+- hosts: sweethosts
+  roles:
+     - { role: s3cmdclient, s3cmd_user: root, s3cmd_secret_key: <insertyoursecretkey>, s3cmd_access_key: <insertyourtoken>}

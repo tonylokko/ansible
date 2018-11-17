@@ -1,0 +1,5 @@
+---
+ - name: install aws cli
+   command: "./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws"
+   
+

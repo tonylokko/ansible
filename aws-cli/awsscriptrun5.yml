@@ -1,0 +1,4 @@
+---
+- hosts: s3group2
+  roles:
+     - { role: runtest } 

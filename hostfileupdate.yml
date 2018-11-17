@@ -1,0 +1,85 @@
+---
+- hosts: s3group1
+  tasks:
+  - name: add host info for bucket1
+    lineinfile: 
+       path: /etc/hosts
+       line: '172.17.2.151 s3testqwer1.s3test.jc.rl.ac.uk'
+       state: present
+
+  - name: add host info for bucket2
+    lineinfile: 
+       path: /etc/hosts
+       line: '172.17.2.151 s3testqwer2.s3test.jc.rl.ac.uk'
+       state: present
+
+- hosts: s3group2
+  tasks:
+  - name: add host info for bucket1
+    lineinfile:
+       path: /etc/hosts
+       line: '172.17.2.152 s3testqwer1.s3test.jc.rl.ac.uk'
+       state: present
+
+  - name: add host info for bucket2
+    lineinfile:
+       path: /etc/hosts
+       line: '172.17.2.152 s3testqwer2.s3test.jc.rl.ac.uk'
+       state: present
+
+- hosts: s3group3
+  tasks:
+  - name: add host info for bucket1
+    lineinfile:
+       path: /etc/hosts
+       line: '172.17.2.163 s3testqwer1.s3test.jc.rl.ac.uk'
+       state: present
+
+  - name: add host info for bucket2
+    lineinfile:
+       path: /etc/hosts
+       line: '172.17.2.163 s3testqwer2.s3test.jc.rl.ac.uk'
+       state: present
+
+- hosts: s3group4
+  tasks:
+  - name: add host info for bucket1
+    lineinfile:
+       path: /etc/hosts
+       line: '172.17.2.164 s3testqwer1.s3test.jc.rl.ac.uk'
+       state: present
+
+  - name: add host info for bucket2
+    lineinfile:
+       path: /etc/hosts
+       line: '172.17.2.164 s3testqwer2.s3test.jc.rl.ac.uk'
+       state: present
+
+- hosts: s3group3
+  tasks:
+  - name: add host info for bucket1
+    lineinfile:
+       path: /etc/hosts
+       line: '172.17.2.153 s3testqwer1.s3test.jc.rl.ac.uk'
+       state: absent
+
+  - name: add host info for bucket2
+    lineinfile:
+       path: /etc/hosts
+       line: '172.17.2.153 s3testqwer2.s3test.jc.rl.ac.uk'
+       state: absent
+
+- hosts: s3group4
+  tasks:
+  - name: add host info for bucket1
+    lineinfile:
+       path: /etc/hosts
+       line: '172.17.2.154 s3testqwer1.s3test.jc.rl.ac.uk'
+       state: absent   
+
+  - name: add host info for bucket2
+    lineinfile:
+       path: /etc/hosts
+       line: '172.17.2.154 s3testqwer2.s3test.jc.rl.ac.uk'
+       state: absent
+

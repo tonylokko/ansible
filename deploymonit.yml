@@ -1,0 +1,26 @@
+---
+- hosts: access
+  tasks: 
+  - name: install monit on every gateway
+    yum: 
+      name: monit
+      state: present
+  - name: copy gateway monit config
+    copy: 
+      src: /root/ansibleruns/cloudgateway
+      dest: /etc/monit.d/cloudgateway
+      owner: root
+      group: root
+      mode: u=rw,g=rw,o=rw
+  - name: apply config file
+    template:
+      src: monitrc.j2
+      dest: /etc/monitrc
+      owner: root
+      group: root
+      mode: 0700
+  - name: enable the service to start on boot
+    service:
+      name: monit
+      state: started
+      enabled: yes

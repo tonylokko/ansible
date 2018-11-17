@@ -1,0 +1,8 @@
+---
+ - name: copy over the aws execution file
+   copy: 
+       src: awss3parallel.sh
+       dest: /root/awss3parallel.sh
+       owner: root 
+       group: root 
+       mode: 755

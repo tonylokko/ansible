@@ -1,0 +1,4 @@
+---
+- hosts: cosbench-just10
+  roles:
+     - { role: runtest } 

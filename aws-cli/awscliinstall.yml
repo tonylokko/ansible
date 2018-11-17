@@ -1,0 +1,4 @@
+---
+- hosts: cosbench-driver
+  roles:
+     - { role: installit } 

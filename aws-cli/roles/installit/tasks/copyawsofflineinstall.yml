@@ -1,0 +1,14 @@
+---
+ - name: copy over the aws offline install bundle
+   copy: 
+       src: awscli-bundle.zip
+       dest: /root/awscli-bundle.zip
+       owner: root 
+       group: root 
+       mode: 755
+
+ - name: unzip the bundle
+   unarchive: 
+       src: /root/awscli-bundle.zip
+       dest: /root/
+       remote_src: yes

@@ -1,0 +1,3 @@
+---
+ - name: try test script
+   command: "sh /root/awss3parallel.sh"

@@ -1,0 +1,5 @@
+---
+- hosts: sweetxl
+  tasks:
+  - name: run jcastortest
+    command: /bin/bash /root/javaSCSP/jtestCAStor.sh

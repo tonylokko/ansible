@@ -1,0 +1,4 @@
+---
+- name: fallocate file
+  command: fallocate -l 2g /dev/shm/testfile.img 
+

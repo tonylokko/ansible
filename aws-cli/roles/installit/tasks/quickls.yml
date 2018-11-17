@@ -1,0 +1,3 @@
+---
+ - name: do an ls bucket to see if everything works
+   command: "aws --endpoint-url=http://<insert-your-domain-here> s3 ls"

@@ -1,0 +1,13 @@
+---
+- hosts: gruut1
+  roles:
+     - { role: s3cmdclient1, s3cmd_user: root, s3cmd_secret_key: <insertsecretkey>, s3cmd_access_key: <insertyourtokenhere>}
+- hosts: gruut2
+  roles:
+     - { role: s3cmdclient2, s3cmd_user: root, s3cmd_secret_key: <insertsecretkey>, s3cmd_access_key: <insertyourtokenhere>}
+- hosts: gruut3
+  roles:
+     - { role: s3cmdclient3, s3cmd_user: root, s3cmd_secret_key: <insertsecretkey>, s3cmd_access_key: <insertyourtokenhere>}
+- hosts: gruut4
+  roles:
+     - { role: s3cmdclient4, s3cmd_user: root, s3cmd_secret_key: <insertsecretkey>,  s3cmd_access_key: <insertyourtokenhere>}

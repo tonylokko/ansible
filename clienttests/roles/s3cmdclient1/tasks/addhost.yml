@@ -1,0 +1,6 @@
+---
+- name: add to hosts
+  lineinfile: 
+    dest: /etc/hosts
+    line: 'ipaddress domaingodeshere'
+

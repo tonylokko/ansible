@@ -1,0 +1,16 @@
+---
+ - name: copy over the aws config file
+   copy: 
+       src: aws-config
+       dest: /root/.aws/config
+       owner: root 
+       group: root 
+       mode: 755
+
+ - name: copy over the aws credential file
+   copy: 
+       src: aws-credentials
+       dest: /root/.aws/credentials
+       owner: root 
+       group: root
+       mode: 755

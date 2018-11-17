@@ -1,0 +1,7 @@
+---
+ - include : copyawsofflineinstall.yml
+ - include : installaws.yml
+ - include : makeawsdirs.yml
+ - include : putawsfiles.yml
+ - include : quickls.yml
+ - include : copyparallel.yml

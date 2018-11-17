@@ -1,0 +1,4 @@
+---
+- hosts: testhosts
+  roles:
+     - { role: s3cmdclient, s3cmd_user: root, s3cmd_secret_key: <insertyoursecretkeyhere>, s3cmd_access_key: <insert your token here>}

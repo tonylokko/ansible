@@ -1,0 +1,5 @@
+---
+- include: copyscript.yml
+- include: fallocate.yml
+- include: copyhosts.yml
+- include: s3cfg.yml

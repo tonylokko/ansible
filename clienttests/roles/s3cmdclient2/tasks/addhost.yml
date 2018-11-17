@@ -1,0 +1,6 @@
+---
+- name: add to hosts
+  lineinfile: 
+    dest: /etc/hosts
+    line: '172.17.2.152 s3test2.jc.rl.ac.uk'
+

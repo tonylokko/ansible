@@ -1,0 +1,5 @@
+---
+ - name: copy over the scsp java testing tool
+   copy: src=jtestCAStor.sh
+         dest=/root/javaSCSP/jtestCAStor.sh
+         owner=root group=root mode=755
